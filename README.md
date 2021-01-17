@@ -44,7 +44,7 @@ Videos are now stored in `.\data` and corresponding audio in `.\data\audio`
 
 1. Download binaries from [here](https://github.com/audeering/opensmile/releases/tag/v3.0.0), extract to `.\tools\opensmile-3.0-win-x64` subdirectory.
 
-2. Configuration file: see XXXXXX.md
+2. Configuration file is [here](./src/MyConf.conf): computes Fundamental Frequency (F0), Mel Frequency, Jitter, Shimmer and Harmonic-to-Noise Ratio (HNR).
 
 3. Extract audio features (Fundamental Frequency F0, Mel Frequency, Jitter, Shimmer, and Harmonic to Noise Ratio HNR):
 ```powershell
