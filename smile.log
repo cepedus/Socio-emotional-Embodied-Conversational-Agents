@@ -1,0 +1,48 @@
+[ 17.01.2021 - 19:23:03 ]
+    (MSG) [2] SMILExtract: openSMILE starting!
+[ 17.01.2021 - 19:23:03 ]
+    (MSG) [2] SMILExtract: config file is: .\src\MyConf.conf
+[ 17.01.2021 - 19:23:03 ]
+    (MSG) [2] cComponentManager: successfully registered 103 component types.
+[ 17.01.2021 - 19:23:03 ]
+    (WRN) [2] cComponentManager: componentManager: starting with version 3.0, multi-threaded processing (nThreads != 1) is no longer supported and is ignored.
+[ 17.01.2021 - 19:23:03 ]
+    (WRN) [2] instance 'csvSink.reader': Inconsistency in input level parameters. growDyn on first (#1) input = 1, growDyn on input # 2 (melspec) = 0. This might cause the processing to hang unpredictably or cause incomplete processing.
+[ 17.01.2021 - 19:23:03 ]
+    (WRN) [2] instance 'csvSink.reader': Inconsistency in input level parameters. isRb on first (#1) input = 0, isRb on input # 2 (melspec) = 1. This might cause the processing to hang unpredictably or cause incomplete processing.
+[ 17.01.2021 - 19:23:03 ]
+    (WRN) [2] instance 'csvSink.reader': Inconsistency in input level parameters. growDyn on first (#1) input = 1, growDyn on input # 3 (mfcc) = 0. This might cause the processing to hang unpredictably or cause incomplete processing.
+[ 17.01.2021 - 19:23:03 ]
+    (WRN) [2] instance 'csvSink.reader': Inconsistency in input level parameters. isRb on first (#1) input = 0, isRb on input # 3 (mfcc) = 1. This might cause the processing to hang unpredictably or cause incomplete processing.
+[ 17.01.2021 - 19:23:03 ]
+    (WRN) [2] instance 'csvSink.reader': Inconsistency in input level parameters. growDyn on first (#1) input = 1, growDyn on input # 5 (hnr) = 0. This might cause the processing to hang unpredictably or cause incomplete processing.
+[ 17.01.2021 - 19:23:03 ]
+    (WRN) [2] instance 'csvSink.reader': Inconsistency in input level parameters. isRb on first (#1) input = 0, isRb on input # 5 (hnr) = 1. This might cause the processing to hang unpredictably or cause incomplete processing.
+[ 17.01.2021 - 19:23:03 ]
+    (WRN) [1] instance 'csvSink.reader': Input level buffer sizes (levelconf.nT) are inconsistent. Level 'pitch' has size 10 which is smaller than the max. input size of all input levels (220500). This might cause the processing to hang unpredictably or cause incomplete processing.
+[ 17.01.2021 - 19:23:03 ]
+    (WRN) [1] instance 'csvSink.reader': Input level buffer sizes (levelconf.nT) are inconsistent. Level 'melspec' has size 238 which is smaller than the max. input size of all input levels (220500). This might cause the processing to hang unpredictably or cause incomplete processing.
+[ 17.01.2021 - 19:23:03 ]
+    (WRN) [1] instance 'csvSink.reader': Input level buffer sizes (levelconf.nT) are inconsistent. Level 'mfcc' has size 238 which is smaller than the max. input size of all input levels (220500). This might cause the processing to hang unpredictably or cause incomplete processing.
+[ 17.01.2021 - 19:23:03 ]
+    (WRN) [1] instance 'csvSink.reader': Input level buffer sizes (levelconf.nT) are inconsistent. Level 'hnr' has size 238 which is smaller than the max. input size of all input levels (220500). This might cause the processing to hang unpredictably or cause incomplete processing.
+==> LEVEL 'wave'  +++  Buffersize(frames) = 220500  +++  nReaders = 2
+==> LEVEL 'frames'  +++  Buffersize(frames) = 238  +++  nReaders = 1
+==> LEVEL 'winframes'  +++  Buffersize(frames) = 238  +++  nReaders = 1
+==> LEVEL 'fft'  +++  Buffersize(frames) = 238  +++  nReaders = 1
+==> LEVEL 'fftmag'  +++  Buffersize(frames) = 238  +++  nReaders = 4
+==> LEVEL 'hps'  +++  Buffersize(frames) = 238  +++  nReaders = 1
+==> LEVEL 'pitchShs'  +++  Buffersize(frames) = 238  +++  nReaders = 1
+==> LEVEL 'pitch'  +++  Buffersize(frames) = 10  +++  nReaders = 2
+==> LEVEL 'jitter'  +++  Buffersize(frames) = 220500  +++  nReaders = 1
+==> LEVEL 'melspec'  +++  Buffersize(frames) = 238  +++  nReaders = 2
+==> LEVEL 'mfcc'  +++  Buffersize(frames) = 238  +++  nReaders = 1
+==> LEVEL 'acf'  +++  Buffersize(frames) = 238  +++  nReaders = 1
+==> LEVEL 'cepstrum'  +++  Buffersize(frames) = 238  +++  nReaders = 1
+==> LEVEL 'hnr'  +++  Buffersize(frames) = 238  +++  nReaders = 1
+[ 17.01.2021 - 19:23:03 ]
+    (MSG) [2] cComponentManager: successfully finished createInstances (15 component instances were finalised, 1 data memories were finalised)
+[ 17.01.2021 - 19:23:03 ]
+    (MSG) [2] cComponentManager: starting single thread processing loop
+[ 17.01.2021 - 19:23:06 ]
+    (MSG) [2] cComponentManager: Processing finished! System ran for 13462 ticks.

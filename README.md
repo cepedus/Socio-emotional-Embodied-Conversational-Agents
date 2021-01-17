@@ -49,12 +49,14 @@ Videos are now stored in `.\data` and corresponding audio in `.\data\audio`
 3. Extract audio features (Fundamental Frequency F0, Mel Frequency, Jitter, Shimmer, and Harmonic to Noise Ratio HNR):
 ```powershell
 cd $HERE
-foreach ($i in @(gci ".\data\audio" -file *.wav)){.\tools\opensmile-3.0-win-x64\bin\SMILExtract.exe -C ".\FeaturesExtractionConf.conf" -I ".\data\audio\$i" -O ".\data\audio_features\$i.csv"}
+mkdir .\data\audio_features
+foreach ($i in @(gci ".\data\audio" -file *.wav)){.\tools\opensmile-3.0-win-x64\bin\SMILExtract.exe -C ".\src\MyConf.conf" -I ".\data\audio\$i" -O ".\data\audio_features\$i.csv"}
 ```
 
-extract features `.\opensmile-3.0-win-x64\bin\SMILExtract.exe -C ".\FeaturesExtractionConf.conf" -I INPUT_PATH -O OUTPUT_PATH`
-
-
+4. Rename features files from `ID.wav.csv` to `ID.csv`:
+```powershell
+foreach ($i in @(gci ".\data\audio_features" -file *.csv)){Rename-Item -path $i.FullName -newname $i.Name.Replace(".wav","")}
+```
 
 
 ### OpenFace
