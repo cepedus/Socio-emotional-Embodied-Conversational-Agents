@@ -1,0 +1,14 @@
+# Python
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints/
+*__pycache__/
+*.pyc
+*.DS_Store
+
+# Data and build folders
+.vscode/
+data/
+false/
+*.egg-info/
+tools/
