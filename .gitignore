@@ -12,3 +12,6 @@ data/
 false/
 *.egg-info/
 tools/
+
+# Log files
+smile.log
