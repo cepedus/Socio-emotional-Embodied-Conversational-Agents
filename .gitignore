@@ -9,6 +9,7 @@
 # Data and build folders
 .vscode/
 data/
+debug/
 figures/
 false/
 *.egg-info/

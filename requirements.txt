@@ -3,5 +3,9 @@ numpy
 pandas
 notebook
 pylint
-yapf
+autopep8
 tqdm
+ipywidgets
+scikit-learn
+pydot
+pydotplus
