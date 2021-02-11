@@ -11,6 +11,7 @@
 data/
 debug/
 figures/
+training_checkpoints/
 false/
 *.egg-info/
 tools/
